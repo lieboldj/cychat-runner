@@ -1,0 +1,194 @@
+name: build
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner_version:
+        description: "Optional version override; defaults to runner.py"
+        required: false
+      create_draft:
+        description: "Prepare a private draft release after verification"
+        type: boolean
+        default: false
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: read
+
+jobs:
+  version:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    outputs:
+      runner_version: ${{ steps.pick.outputs.runner_version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.14"
+      - name: Pick the version from the input or the tag
+        id: pick
+        env:
+          INPUT_VERSION: ${{ inputs.runner_version }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [ -n "$INPUT_VERSION" ]; then
+            v="$INPUT_VERSION"
+          elif [[ "$REF_NAME" == v* ]]; then
+            v="${REF_NAME#v}"
+          else
+            v=$(python -c 'from runner import RUNNER_VERSION; print(RUNNER_VERSION)')
+          fi
+          echo "runner_version=$v" >> "$GITHUB_OUTPUT"
+          echo "version: $v"
+      - name: Check it matches runner.py
+        env:
+          RUNNER_VERSION_INPUT: ${{ steps.pick.outputs.runner_version }}
+        run: python check_version.py
+
+  build:
+    needs: [version, sources]
+    name: ${{ matrix.asset }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Linux binaries require glibc 2.35 or newer.
+          - os: ubuntu-22.04
+            python: "3.12.14"
+            asset: script-runner-linux-x86_64
+            binary: script-runner
+          - os: windows-2022
+            python: "3.12.10"
+            asset: script-runner-windows-x86_64.exe
+            binary: script-runner.exe
+          - os: macos-14
+            python: "3.12.10"
+            asset: script-runner-macos-aarch64
+            binary: script-runner
+          - os: macos-15-intel
+            python: "3.12.10"
+            asset: script-runner-macos-x86_64
+            binary: script-runner
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Create an isolated build environment
+        run: |
+          python -m venv .venv
+          python - <<'PYENV'
+          import os, pathlib
+          scripts = pathlib.Path('.venv') / ('Scripts' if os.name == 'nt' else 'bin')
+          with open(os.environ['GITHUB_PATH'], 'a') as output:
+              output.write(str(scripts.resolve()) + '\n')
+          PYENV
+
+      - name: Install reviewed build requirements
+        run: |
+          python -m pip install --no-deps -r requirements.txt --report install-report.json
+          python -m pip check
+
+      - name: Enable exact Ubuntu source downloads
+        if: runner.os == 'Linux'
+        run: |
+          printf '%s\n' \
+            'deb-src http://archive.ubuntu.com/ubuntu jammy main universe' \
+            'deb-src http://archive.ubuntu.com/ubuntu jammy-updates main universe' \
+            'deb-src http://security.ubuntu.com/ubuntu jammy-security main universe' \
+            | sudo tee /etc/apt/sources.list.d/cychat-sources.list >/dev/null
+          sudo apt-get update -qq
+          sudo apt-get install -y --only-upgrade libbz2-1.0 libffi8 liblzma5 libsqlite3-0 libssl3 libstdc++6 libgcc-s1 libuuid1 libyajl2 zlib1g libexpat1
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: runner-${{ needs.version.outputs.runner_version }}-sources
+          path: out/shared-sources
+      - name: Reuse verified dependency sources
+        run: python release_materials.py seed --archive "out/shared-sources/runner-${{ needs.version.outputs.runner_version }}-sources.tar.gz" --version "${{ needs.version.outputs.runner_version }}"
+
+      - name: Collect source archives and license notices
+        run: python release_materials.py prepare --report install-report.json
+
+      - name: Build
+        run: python -m PyInstaller script-runner.spec --clean --noconfirm
+
+      - name: Smoke test
+        run: python smoke_test.py "dist/${{ matrix.binary }}"
+
+      - name: Package binary, notices, and build inventory
+        run: python release_materials.py package --asset "${{ matrix.asset }}" --binary "dist/${{ matrix.binary }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.asset }}
+          path: out/release/*
+          if-no-files-found: error
+          compression-level: 0
+
+  sources:
+    needs: version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.14"
+      - name: Assemble corresponding source
+        run: python release_materials.py sources --version "${{ needs.version.outputs.runner_version }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: runner-${{ needs.version.outputs.runner_version }}-sources
+          path: out/release/*
+          if-no-files-found: error
+          compression-level: 0
+
+  manifest:
+    needs: [version, build, sources]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.14"
+      - uses: actions/download-artifact@v4
+        with:
+          path: runners
+          merge-multiple: true
+      - name: Verify release files and write checksums
+        run: python release_materials.py verify --directory runners --version "${{ needs.version.outputs.runner_version }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: runner-${{ needs.version.outputs.runner_version }}-manifest
+          path: |
+            runners/checksums.properties
+            runners/SHA256SUMS
+          if-no-files-found: error
+      - name: Prepare draft release (never publish automatically)
+        if: startsWith(github.ref, 'refs/tags/v') || inputs.create_draft
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ needs.version.outputs.runner_version }}
+          COMMIT: ${{ github.sha }}
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json isDraft > release-state.json; then
+            python -c 'import json; assert json.load(open("release-state.json"))["isDraft"], "Refusing to overwrite a published release"'
+            gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --draft \
+              --target "$COMMIT" --title "CyChat Runner $TAG" --notes-file RELEASE_NOTES.md
+            gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" --clobber runners/*
+          else
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --draft \
+              --target "$COMMIT" --title "CyChat Runner $TAG" \
+              --notes-file RELEASE_NOTES.md runners/*
+          fi

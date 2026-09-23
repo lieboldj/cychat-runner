@@ -1,0 +1,1645 @@
+{
+  "apache-arrow-cpp": {
+    "license": "Apache-2.0",
+    "source": {
+      "filename": "apache-arrow-21.0.0.tar.gz",
+      "sha256": "5d3f8db7e72fb9f65f4785b7a1634522e8d8e9657a445af53d4a34a3849857b5",
+      "url": "https://archive.apache.org/dist/arrow/arrow-21.0.0/apache-arrow-21.0.0.tar.gz"
+    },
+    "version": "21.0.0"
+  },
+  "arrow-absl": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "absl-20211102.0.tar.gz",
+      "sha256": "dcf71b9cba8dc0ca9940c4b316a0c796be8fab42b070bb6b7cab62b48f0e66c4",
+      "url": "https://github.com/abseil/abseil-cpp/archive/20211102.0.tar.gz"
+    },
+    "version": "20211102.0"
+  },
+  "arrow-aws-c-auth": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-auth-v0.9.0.tar.gz",
+      "sha256": "aa6e98864fefb95c249c100da4ae7aed36ba13a8a91415791ec6fad20bec0427",
+      "url": "https://github.com/awslabs/aws-c-auth/archive/v0.9.0.tar.gz"
+    },
+    "version": "v0.9.0"
+  },
+  "arrow-aws-c-cal": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-cal-v0.9.2.tar.gz",
+      "sha256": "f9f3bc6a069e2efe25fcdf73e4d2b16b5608c327d2eb57c8f7a8524e9e1fcad0",
+      "url": "https://github.com/awslabs/aws-c-cal/archive/v0.9.2.tar.gz"
+    },
+    "version": "v0.9.2"
+  },
+  "arrow-aws-c-common": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-common-v0.12.3.tar.gz",
+      "sha256": "a4e7ac6c6f840cb6ab56b8ee0bcd94a61c59d68ca42570bca518432da4c94273",
+      "url": "https://github.com/awslabs/aws-c-common/archive/v0.12.3.tar.gz"
+    },
+    "version": "v0.12.3"
+  },
+  "arrow-aws-c-compression": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-compression-v0.3.1.tar.gz",
+      "sha256": "d89fca17a37de762dc34f332d2da402343078da8dbd2224c46a11a88adddf754",
+      "url": "https://github.com/awslabs/aws-c-compression/archive/v0.3.1.tar.gz"
+    },
+    "version": "v0.3.1"
+  },
+  "arrow-aws-c-event-stream": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-event-stream-v0.5.4.tar.gz",
+      "sha256": "cef8b78e362836d15514110fb43a0a0c7a86b0a210d5fe25fd248a82027a7272",
+      "url": "https://github.com/awslabs/aws-c-event-stream/archive/v0.5.4.tar.gz"
+    },
+    "version": "v0.5.4"
+  },
+  "arrow-aws-c-http": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-http-v0.10.2.tar.gz",
+      "sha256": "048d9d683459ade363fd7cc448c2b6329c78f67a2a0c0cb61c16de4634a2fc6b",
+      "url": "https://github.com/awslabs/aws-c-http/archive/v0.10.2.tar.gz"
+    },
+    "version": "v0.10.2"
+  },
+  "arrow-aws-c-io": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-io-v0.19.1.tar.gz",
+      "sha256": "f2fea0c066924f7fe3c2b1c7b2fa9be640f5b16a6514854226330e63a1faacd0",
+      "url": "https://github.com/awslabs/aws-c-io/archive/v0.19.1.tar.gz"
+    },
+    "version": "v0.19.1"
+  },
+  "arrow-aws-c-mqtt": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-mqtt-v0.13.1.tar.gz",
+      "sha256": "c54d02c1e46f55bae8d5e6f9c4b0d78d84c1c9d9ac16ba8d78c3361edcd8b5bb",
+      "url": "https://github.com/awslabs/aws-c-mqtt/archive/v0.13.1.tar.gz"
+    },
+    "version": "v0.13.1"
+  },
+  "arrow-aws-c-s3": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-s3-v0.8.1.tar.gz",
+      "sha256": "c8b09780691d2b94e50d101c68f01fa2d1c3debb0ff3aed313d93f0d3c9af663",
+      "url": "https://github.com/awslabs/aws-c-s3/archive/v0.8.1.tar.gz"
+    },
+    "version": "v0.8.1"
+  },
+  "arrow-aws-c-sdkutils": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-c-sdkutils-v0.2.4.tar.gz",
+      "sha256": "493cbed4fa57e0d4622fcff044e11305eb4fc12445f32c8861025597939175fc",
+      "url": "https://github.com/awslabs/aws-c-sdkutils/archive/v0.2.4.tar.gz"
+    },
+    "version": "v0.2.4"
+  },
+  "arrow-aws-checksums": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-checksums-v0.2.7.tar.gz",
+      "sha256": "178e8398d98111f29150f7813a70c20ad97ab30be0de02525440355fe84ccb1d",
+      "url": "https://github.com/awslabs/aws-checksums/archive/v0.2.7.tar.gz"
+    },
+    "version": "v0.2.7"
+  },
+  "arrow-aws-crt-cpp": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-crt-cpp-v0.32.8.tar.gz",
+      "sha256": "db44260452a0296341fb8e7b987e4c328f08f7829b9f1c740fed9c963e081e93",
+      "url": "https://github.com/awslabs/aws-crt-cpp/archive/v0.32.8.tar.gz"
+    },
+    "version": "v0.32.8"
+  },
+  "arrow-aws-lc": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-lc-v1.52.1.tar.gz",
+      "sha256": "fe552e3c3522f73afc3c30011745c431c633f7b4e25dcd7b38325f194a7b3b75",
+      "url": "https://github.com/awslabs/aws-lc/archive/v1.52.1.tar.gz"
+    },
+    "version": "v1.52.1"
+  },
+  "arrow-awssdk": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "aws-sdk-cpp-1.11.587.tar.gz",
+      "sha256": "b9944ba9905a68d6e53abb4f36ab2b3bd18ac88d8571647bb9f2b8026b76f8cd",
+      "url": "https://github.com/aws/aws-sdk-cpp/archive/1.11.587.tar.gz"
+    },
+    "version": "1.11.587"
+  },
+  "arrow-boost": {
+    "license": "BSL-1.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "boost-1.88.0-cmake.tar.gz",
+      "sha256": "dcea50f40ba1ecfc448fdf886c0165cf3e525fef2c9e3e080b9804e8117b9694",
+      "url": "https://github.com/boostorg/boost/releases/download/boost-1.88.0/boost-1.88.0-cmake.tar.gz"
+    },
+    "version": "1.88.0"
+  },
+  "arrow-brotli": {
+    "license": "MIT",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "brotli-v1.0.9.tar.gz",
+      "sha256": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+      "url": "https://github.com/google/brotli/archive/v1.0.9.tar.gz"
+    },
+    "version": "v1.0.9"
+  },
+  "arrow-bzip2": {
+    "license": "bzip2-1.0.6",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "bzip2-1.0.8.tar.gz",
+      "sha256": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+      "url": "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
+    },
+    "version": "1.0.8"
+  },
+  "arrow-cares": {
+    "license": "MIT",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "cares-1.17.2.tar.gz",
+      "sha256": "4803c844ce20ce510ef0eb83f8ea41fa24ecaae9d280c468c582d2bb25b3913d",
+      "url": "https://github.com/c-ares/c-ares/releases/download/cares-1_17_2/c-ares-1.17.2.tar.gz"
+    },
+    "version": "1.17.2"
+  },
+  "arrow-crc32c": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "crc32c-1.1.2.tar.gz",
+      "sha256": "ac07840513072b7fcebda6e821068aa04889018f24e10e46181068fb214d7e56",
+      "url": "https://github.com/google/crc32c/archive/refs/tags/1.1.2.tar.gz"
+    },
+    "version": "1.1.2"
+  },
+  "arrow-gbenchmark": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "gbenchmark-v1.8.3.tar.gz",
+      "sha256": "6bc180a57d23d4d9515519f92b0c83d61b05b5bab188961f36ac7b06b0d9e9ce",
+      "url": "https://github.com/google/benchmark/archive/v1.8.3.tar.gz"
+    },
+    "version": "v1.8.3"
+  },
+  "arrow-gflags": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "gflags-v2.2.2.tar.gz",
+      "sha256": "34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf",
+      "url": "https://github.com/gflags/gflags/archive/v2.2.2.tar.gz"
+    },
+    "version": "v2.2.2"
+  },
+  "arrow-glog": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "glog-v0.5.0.tar.gz",
+      "sha256": "eede71f28371bf39aa69b45de23b329d37214016e2055269b3b5e7cfd40b59f5",
+      "url": "https://github.com/google/glog/archive/v0.5.0.tar.gz"
+    },
+    "version": "v0.5.0"
+  },
+  "arrow-google-cloud-cpp": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "google-cloud-cpp-v2.22.0.tar.gz",
+      "sha256": "0c68782e57959c82e0c81def805c01460a042c1aae0c2feee905acaa2a2dc9bf",
+      "url": "https://github.com/googleapis/google-cloud-cpp/archive/v2.22.0.tar.gz"
+    },
+    "version": "v2.22.0"
+  },
+  "arrow-grpc": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "grpc-v1.46.3.tar.gz",
+      "sha256": "d6cbf22cb5007af71b61c6be316a79397469c58c82a942552a62e708bce60964",
+      "url": "https://github.com/grpc/grpc/archive/v1.46.3.tar.gz"
+    },
+    "version": "v1.46.3"
+  },
+  "arrow-gtest": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "gtest-1.16.0.tar.gz",
+      "sha256": "78c676fc63881529bf97bf9d45948d905a66833fbfa5318ea2cd7478cb98f399",
+      "url": "https://github.com/google/googletest/releases/download/v1.16.0/googletest-1.16.0.tar.gz"
+    },
+    "version": "1.16.0"
+  },
+  "arrow-jemalloc": {
+    "license": "BSD-2-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "jemalloc-5.3.0.tar.bz2",
+      "sha256": "2db82d1e7119df3e71b7640219b6dfe84789bc0537983c3b7ac4f7189aecfeaa",
+      "url": "https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2"
+    },
+    "version": "5.3.0"
+  },
+  "arrow-lz4": {
+    "license": "BSD-2-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "lz4-v1.10.0.tar.gz",
+      "sha256": "537512904744b35e232912055ccf8ec66d768639ff3abe5788d90d792ec5f48b",
+      "url": "https://github.com/lz4/lz4/archive/v1.10.0.tar.gz"
+    },
+    "version": "v1.10.0"
+  },
+  "arrow-mimalloc": {
+    "license": "MIT",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "mimalloc-v2.2.4.tar.gz",
+      "sha256": "754a98de5e2912fddbeaf24830f982b4540992f1bab4a0a8796ee118e0752bda",
+      "url": "https://github.com/microsoft/mimalloc/archive/v2.2.4.tar.gz"
+    },
+    "version": "v2.2.4"
+  },
+  "arrow-nlohmann-json": {
+    "license": "MIT",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "nlohmann-json-v3.12.0.tar.gz",
+      "sha256": "4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187",
+      "url": "https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.tar.gz"
+    },
+    "version": "v3.12.0"
+  },
+  "arrow-opentelemetry": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "opentelemetry-cpp-v1.21.0.tar.gz",
+      "sha256": "98e5546f577a11b52a57faed1f4cc60d8c1daa44760eba393f43eab5a8ec46a2",
+      "url": "https://github.com/open-telemetry/opentelemetry-cpp/archive/refs/tags/v1.21.0.tar.gz"
+    },
+    "version": "v1.21.0"
+  },
+  "arrow-opentelemetry-proto": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "opentelemetry-proto-v1.7.0.tar.gz",
+      "sha256": "11330d850f5e24d34c4246bc8cb21fcd311e7565d219195713455a576bb11bed",
+      "url": "https://github.com/open-telemetry/opentelemetry-proto/archive/refs/tags/v1.7.0.tar.gz"
+    },
+    "version": "v1.7.0"
+  },
+  "arrow-orc": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "orc-2.1.2.tar.gz",
+      "sha256": "55451e65dea6ed42afb39fe33a88f9dcea8928dca0a0c9c23ef5545587810b4c",
+      "url": "https://archive.apache.org/dist/orc/orc-2.1.2/orc-2.1.2.tar.gz"
+    },
+    "version": "2.1.2"
+  },
+  "arrow-protobuf": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "protobuf-v21.3.tar.gz",
+      "sha256": "2f723218f6cb709ae4cdc4fb5ed56a5951fc5d466f0128ce4c946b8c78c8c49f",
+      "url": "https://github.com/google/protobuf/releases/download/v21.3/protobuf-all-21.3.tar.gz"
+    },
+    "version": "v21.3"
+  },
+  "arrow-rapidjson": {
+    "license": "MIT",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "rapidjson-232389d4f1012dddec4ef84861face2d2ba85709.tar.gz",
+      "sha256": "b9290a9a6d444c8e049bd589ab804e0ccf2b05dc5984a19ed5ae75d090064806",
+      "url": "https://github.com/miloyip/rapidjson/archive/232389d4f1012dddec4ef84861face2d2ba85709.tar.gz"
+    },
+    "version": "232389d4f1012dddec4ef84861face2d2ba85709"
+  },
+  "arrow-re2": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "re2-2022-06-01.tar.gz",
+      "sha256": "f89c61410a072e5cbcf8c27e3a778da7d6fd2f2b5b1445cd4f4508bee946ab0f",
+      "url": "https://github.com/google/re2/archive/2022-06-01.tar.gz"
+    },
+    "version": "2022-06-01"
+  },
+  "arrow-s2n-tls": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "s2n-v1.5.21.tar.gz",
+      "sha256": "203d69d6f557f6ab303438ad186fca13fd2c60581b2cca6348a9fbee10d79995",
+      "url": "https://github.com/aws/s2n-tls/archive/v1.5.21.tar.gz"
+    },
+    "version": "v1.5.21"
+  },
+  "arrow-snappy": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "snappy-1.2.2.tar.gz",
+      "sha256": "90f74bc1fbf78a6c56b3c4a082a05103b3a56bb17bca1a27e052ea11723292dc",
+      "url": "https://github.com/google/snappy/archive/1.2.2.tar.gz"
+    },
+    "version": "1.2.2"
+  },
+  "arrow-substrait": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "substrait-v0.44.0.tar.gz",
+      "sha256": "f989a862f694e7dbb695925ddb7c4ce06aa6c51aca945105c075139aed7e55a2",
+      "url": "https://github.com/substrait-io/substrait/archive/v0.44.0.tar.gz"
+    },
+    "version": "v0.44.0"
+  },
+  "arrow-thrift": {
+    "license": "Apache-2.0",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "thrift-0.22.0.tar.gz",
+      "sha256": "794a0e455787960d9f27ab92c38e34da27e8deeda7a5db0e59dc64a00df8a1e5",
+      "url": "https://archive.apache.org/dist/thrift/0.22.0/thrift-0.22.0.tar.gz"
+    },
+    "version": "0.22.0"
+  },
+  "arrow-utf8proc": {
+    "license": "MIT AND Unicode-DFS-2016",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "utf8proc-v2.10.0.tar.gz",
+      "sha256": "6f4f1b639daa6dca9f80bc5db1233e9cbaa31a67790887106160b33ef743f136",
+      "url": "https://github.com/JuliaStrings/utf8proc/archive/v2.10.0.tar.gz"
+    },
+    "version": "v2.10.0"
+  },
+  "arrow-vcpkg": {
+    "license": "MIT",
+    "source": {
+      "filename": "vcpkg-f7423ee1.tar.gz",
+      "sha256": "4df36443aa78ee99c8bd21491b20896d0c6874c15a68f91f0234e28de7df574a",
+      "url": "https://codeload.github.com/microsoft/vcpkg/tar.gz/f7423ee180c4b7f40d43402c2feb3859161ef625"
+    },
+    "version": "f7423ee180c4b7f40d43402c2feb3859161ef625"
+  },
+  "arrow-vcpkg-abseil-a387b0a9": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "abseil-abseil-cpp-20240116.2.tar.gz",
+      "sha256": "733726b8c3a6d39a4120d7e45ea8b41a434cdacde401cba500f14236c49b39dc",
+      "url": "https://github.com/abseil/abseil-cpp/archive/20240116.2.tar.gz"
+    },
+    "version": "20240116.2"
+  },
+  "arrow-vcpkg-aws-c-auth-beb2c4ce": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-auth-v0.7.16.tar.gz",
+      "sha256": "7ee5afe05482f750dd0406b8b5b55dafb446fc21288f98c0b4118d62795003ba",
+      "url": "https://github.com/awslabs/aws-c-auth/archive/v0.7.16.tar.gz"
+    },
+    "version": "0.7.16"
+  },
+  "arrow-vcpkg-aws-c-cal-f828f187": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-cal-v0.6.10.tar.gz",
+      "sha256": "5a4b8c3746650c84dd47c830be06b225041d4dbf1001439df97fec76ef933b79",
+      "url": "https://github.com/awslabs/aws-c-cal/archive/v0.6.10.tar.gz"
+    },
+    "version": "0.6.10"
+  },
+  "arrow-vcpkg-aws-c-common-48fca738": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-common-v0.9.14.tar.gz",
+      "sha256": "70b10ebbf40e3b6c1b36d81d5e4b63fe430414a81f76293a65e42dfa5def571e",
+      "url": "https://github.com/awslabs/aws-c-common/archive/v0.9.14.tar.gz"
+    },
+    "version": "0.9.14"
+  },
+  "arrow-vcpkg-aws-c-compression-cf237bd5": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-compression-v0.2.18.tar.gz",
+      "sha256": "517c361f3b7fffca08efd5ad251a20489794f056eab0dfffacc6d5b341df8e86",
+      "url": "https://github.com/awslabs/aws-c-compression/archive/v0.2.18.tar.gz"
+    },
+    "version": "0.2.18"
+  },
+  "arrow-vcpkg-aws-c-event-stream-cf678c01": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-event-stream-v0.4.2.tar.gz",
+      "sha256": "c98b8fa05c2ca10aacfce7327b92a84669c2da95ccb8e7d7b3e3285fcec8beee",
+      "url": "https://github.com/awslabs/aws-c-event-stream/archive/v0.4.2.tar.gz"
+    },
+    "version": "0.4.2"
+  },
+  "arrow-vcpkg-aws-c-http-76a98fb5": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-http-v0.8.1.tar.gz",
+      "sha256": "83fb47e2d7956469bb328f16dea96663e96f8f20dc60dc4e9676b82804588530",
+      "url": "https://github.com/awslabs/aws-c-http/archive/v0.8.1.tar.gz"
+    },
+    "version": "0.8.1"
+  },
+  "arrow-vcpkg-aws-c-io-2456411b": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-io-v0.14.6.tar.gz",
+      "sha256": "bb3af305af748185b1c7b17afa343e54f2d494ccff397402f1b17041b0967865",
+      "url": "https://github.com/awslabs/aws-c-io/archive/v0.14.6.tar.gz"
+    },
+    "version": "0.14.6"
+  },
+  "arrow-vcpkg-aws-c-mqtt-85edc100": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-mqtt-v0.10.3.tar.gz",
+      "sha256": "bb938d794b0757d669b5877526363dc6f6f0e43869ca19fc196ffd0f7a35f5b9",
+      "url": "https://github.com/awslabs/aws-c-mqtt/archive/v0.10.3.tar.gz"
+    },
+    "version": "0.10.3"
+  },
+  "arrow-vcpkg-aws-c-s3-589503a5": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-s3-v0.5.4.tar.gz",
+      "sha256": "c4294d34afc56a754ac69b96c2bb738f135b20c24a5bc94e9ba874f2c11c188e",
+      "url": "https://github.com/awslabs/aws-c-s3/archive/v0.5.4.tar.gz"
+    },
+    "version": "0.5.4"
+  },
+  "arrow-vcpkg-aws-c-sdkutils-c68c2205": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-c-sdkutils-v0.1.15.tar.gz",
+      "sha256": "15fa30b8b0a357128388f2f40ab0ba3df63742fd333cc2f89cb91a9169f03bdc",
+      "url": "https://github.com/awslabs/aws-c-sdkutils/archive/v0.1.15.tar.gz"
+    },
+    "version": "0.1.15"
+  },
+  "arrow-vcpkg-aws-checksums-dc1dc32d": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-checksums-v0.1.18.tar.gz",
+      "sha256": "bdba9d0a8b8330a89c6b8cbc00b9aa14f403d3449b37ff2e0d96d62a7301b2ee",
+      "url": "https://github.com/awslabs/aws-checksums/archive/v0.1.18.tar.gz"
+    },
+    "version": "0.1.18"
+  },
+  "arrow-vcpkg-aws-crt-cpp-cbbe23c7": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "awslabs-aws-crt-cpp-v0.26.4.tar.gz",
+      "sha256": "486113a556614b7b824e1aefec365a2261154fe06321b85601aefe2f65bd0706",
+      "url": "https://github.com/awslabs/aws-crt-cpp/archive/v0.26.4.tar.gz"
+    },
+    "version": "0.26.4"
+  },
+  "arrow-vcpkg-aws-sdk-cpp-9becb886": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "aws-aws-sdk-cpp-1.11.285.tar.gz",
+      "sha256": "65b0c686e6a8a7a549d373641f7837ce8bbd2c899cf21496d6eb76e7058be104",
+      "url": "https://github.com/aws/aws-sdk-cpp/archive/1.11.285.tar.gz"
+    },
+    "version": "1.11.285#3"
+  },
+  "arrow-vcpkg-azure-core-cpp-7727bb68": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "Azure-azure-sdk-for-cpp-azure-core_1.12.0.tar.gz",
+      "sha256": "5dacab7efa8acc167d6539a7c805842b5f17ce9b3f4c4ecb23b4b551fa08b1c5",
+      "url": "https://github.com/Azure/azure-sdk-for-cpp/archive/azure-core_1.12.0.tar.gz"
+    },
+    "version": "1.12.0"
+  },
+  "arrow-vcpkg-azure-identity-cpp-a12303f5": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "Azure-azure-sdk-for-cpp-azure-identity_1.8.0.tar.gz",
+      "sha256": "848c5c7dd3c8acf351546bb523578f06e25d4f45cf3d11e39cf5c2551778d0f7",
+      "url": "https://github.com/Azure/azure-sdk-for-cpp/archive/azure-identity_1.8.0.tar.gz"
+    },
+    "version": "1.8.0"
+  },
+  "arrow-vcpkg-azure-storage-blobs-cpp-50ac53c0": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "Azure-azure-sdk-for-cpp-azure-storage-blobs_12.11.0.tar.gz",
+      "sha256": "8769c1716b398ff1e5bee354f1efddb46088f8a717c9f535b6a33a2a58e197dc",
+      "url": "https://github.com/Azure/azure-sdk-for-cpp/archive/azure-storage-blobs_12.11.0.tar.gz"
+    },
+    "version": "12.11.0"
+  },
+  "arrow-vcpkg-azure-storage-common-cpp-dec47519": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "Azure-azure-sdk-for-cpp-azure-storage-common_12.6.0.tar.gz",
+      "sha256": "d96e852d9eeff2c7d845a89766f23510b1d007875bb83b514a1a77cd30f54060",
+      "url": "https://github.com/Azure/azure-sdk-for-cpp/archive/azure-storage-common_12.6.0.tar.gz"
+    },
+    "version": "12.6.0"
+  },
+  "arrow-vcpkg-azure-storage-files-datalake-cpp-50fd94bc": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "Azure-azure-sdk-for-cpp-azure-storage-files-datalake_12.10.0.tar.gz",
+      "sha256": "ebaf136a0aa1fa71adebdee98011818f75117c4597a9d02d9918cc3455c99744",
+      "url": "https://github.com/Azure/azure-sdk-for-cpp/archive/azure-storage-files-datalake_12.10.0.tar.gz"
+    },
+    "version": "12.10.0"
+  },
+  "arrow-vcpkg-boost-algorithm-aecaa96c": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-algorithm-boost-1.85.0.tar.gz",
+      "sha256": "b9223e4295b350a76ecbb27fc8093db9c3995ce767abb12efd6987d1a59fd584",
+      "url": "https://github.com/boostorg/algorithm/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-align-5825de95": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-align-boost-1.85.0.tar.gz",
+      "sha256": "9bdd61a9f6f9bbac970ee2494664f6bd3373ed2719a63f385dc1530c5c33e8ef",
+      "url": "https://github.com/boostorg/align/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-array-2196e9f4": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-array-boost-1.85.0.tar.gz",
+      "sha256": "0b0405002813f07f14f8a03bf0b0dad47d51ccba9e89b325df92708bdfeeed93",
+      "url": "https://github.com/boostorg/array/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-assert-9faa1f2f": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-assert-boost-1.85.0.tar.gz",
+      "sha256": "0dd771d67547828f18ae336b0b71732d43a538b864148066e5d15ad412784fa8",
+      "url": "https://github.com/boostorg/assert/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-atomic-c01e61ae": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-atomic-boost-1.85.0.tar.gz",
+      "sha256": "aa481a9867be91be8abbd70419e50655adece8375dc38b3d9ea4288544205128",
+      "url": "https://github.com/boostorg/atomic/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-bind-9f54b6c4": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-bind-boost-1.85.0.tar.gz",
+      "sha256": "4a1572786467dc2a833d0eeda771cdc8ca71b09e8d9de43f8b694108732022aa",
+      "url": "https://github.com/boostorg/bind/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-chrono-9cbf40e3": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-chrono-boost-1.85.0.tar.gz",
+      "sha256": "c6e1617d8b92642bd4de2df6b070715af9111c86c151986beb4a101a98bf804a",
+      "url": "https://github.com/boostorg/chrono/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-cmake-6884b818": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-boost-boost-1.85.0.tar.gz",
+      "sha256": "422e61788b197c9aabf8b500e1f8586f0eeac158d00c3191b1de065a3a204ec4",
+      "url": "https://github.com/boostorg/boost/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-cmake-b5bab722": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-cmake-boost-1.85.0.tar.gz",
+      "sha256": "9c7acc17c87bdbd181b4f8a0b27e01af1ff8727caa8eba89358183f2d024229a",
+      "url": "https://github.com/boostorg/cmake/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-concept-check-157c15e9": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-concept_check-boost-1.85.0.tar.gz",
+      "sha256": "e2aad3ce77ff621c2784234bd5353ae1421e33138b824b5319491b668b006151",
+      "url": "https://github.com/boostorg/concept_check/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-config-5d40d7b7": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-config-boost-1.85.0.tar.gz",
+      "sha256": "cde916d56ca76ecca15311dc669e18996dc1b94a63bc4ee4fbe4217fc019bacf",
+      "url": "https://github.com/boostorg/config/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-container-f65209aa": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-container-boost-1.85.0.tar.gz",
+      "sha256": "5b595f9f0aebce3daaf8725222b48d7b62c3eb7c04fe0933c6b3954e826242de",
+      "url": "https://github.com/boostorg/container/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-container-hash-a41dc3f2": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-container_hash-boost-1.85.0.tar.gz",
+      "sha256": "235b401fab78fdf9a176621b96fe89fe7a8e050637bcb020afb84387e602edeb",
+      "url": "https://github.com/boostorg/container_hash/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-conversion-7cf979e7": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-conversion-boost-1.85.0.tar.gz",
+      "sha256": "613192e22915557e384ad35bdf5434c87e0ab3dabc2be39cf82eb284e9badaff",
+      "url": "https://github.com/boostorg/conversion/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-core-75eef735": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-core-boost-1.85.0.tar.gz",
+      "sha256": "432e455a3bab26e929eb23d2735aaf548f3624e28413e6c7cc154d9490551524",
+      "url": "https://github.com/boostorg/core/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-date-time-6b88e4c1": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-date_time-boost-1.85.0.tar.gz",
+      "sha256": "12ebb03e92af860ea568cc0a00b62997dcdc8212c120349dcc5d552be1b950a0",
+      "url": "https://github.com/boostorg/date_time/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-describe-089b16c0": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-describe-boost-1.85.0.tar.gz",
+      "sha256": "f4bc5277e7acbc72669a442a4f97b698f20c945ea624cab7b76b0a9e1ba0c705",
+      "url": "https://github.com/boostorg/describe/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-detail-2441284a": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-detail-boost-1.85.0.tar.gz",
+      "sha256": "b67215d4338b1eb9a2d9ce72af0477f73c93b9f760920e2fd60ed713ac28b2fa",
+      "url": "https://github.com/boostorg/detail/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-dynamic-bitset-00903020": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-dynamic_bitset-boost-1.85.0.tar.gz",
+      "sha256": "20026a11af6769df0a43c82a8abf1d8132f71f60cc934bdfa4fd9e99805bd598",
+      "url": "https://github.com/boostorg/dynamic_bitset/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-exception-30f0cd15": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-exception-boost-1.85.0.tar.gz",
+      "sha256": "64bddd92cc5d520752e742f5f5f6cbbfa6ba49559f8117ff65fb00c6a61726a7",
+      "url": "https://github.com/boostorg/exception/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-function-33efd2d1": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-function-boost-1.85.0.tar.gz",
+      "sha256": "abeaf1b7c66c33c7055d4872714888687b1e4f2d8a8cbeca87d7c24df4171cc1",
+      "url": "https://github.com/boostorg/function/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-function-types-19b3f83b": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-function_types-boost-1.85.0.tar.gz",
+      "sha256": "d8c73e66059dbcbb5bef7939282f6874fb1195a167f89b9dd16d9fe6fd7b8efd",
+      "url": "https://github.com/boostorg/function_types/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-functional-887a2210": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-functional-boost-1.85.0.tar.gz",
+      "sha256": "7615650285f84d37568e0b93b09e2c418c1cb1d80fff4520c5b21411e56174ec",
+      "url": "https://github.com/boostorg/functional/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-fusion-cbcc9940": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-fusion-boost-1.85.0.tar.gz",
+      "sha256": "52cd21f71616d6df6b3437e7978b1ae268b0308d2f44bc87430bc9ec453eba2b",
+      "url": "https://github.com/boostorg/fusion/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-headers-0482310f": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-headers-boost-1.85.0.tar.gz",
+      "sha256": "700b4ac2f05b4fdfcbe58a13d73ac9d708378a23eccea53786d9f0de10e6595b",
+      "url": "https://github.com/boostorg/headers/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-integer-54eede20": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-integer-boost-1.85.0.tar.gz",
+      "sha256": "efa0d0731b4ea889465b9b241f46412999f27361099ddc9fd3cfe5116ce62d5e",
+      "url": "https://github.com/boostorg/integer/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-intrusive-98b6ee8f": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-intrusive-boost-1.85.0.tar.gz",
+      "sha256": "751b4255cf9529bafcacd60ff27b08cd613df2ca72e4c48f578a9c3c66b1901c",
+      "url": "https://github.com/boostorg/intrusive/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-io-5846ba38": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-io-boost-1.85.0.tar.gz",
+      "sha256": "ae7343807da715200fa3851982497218dda66ccd0305563af681c9f90998614c",
+      "url": "https://github.com/boostorg/io/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-iterator-9e86853a": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-iterator-boost-1.85.0.tar.gz",
+      "sha256": "2546427563bd34fbd13005e711cbb32e6f07479f1fd754ad279b401655bc9438",
+      "url": "https://github.com/boostorg/iterator/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-lexical-cast-f541c16c": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-lexical_cast-boost-1.85.0.tar.gz",
+      "sha256": "0c4c50448fd3932b876e1dbfdbb7773083e24a9de20c6afb738e44d9e16c6620",
+      "url": "https://github.com/boostorg/lexical_cast/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-locale-bc1a8077": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-locale-boost-1.85.0.tar.gz",
+      "sha256": "1cfabafc4050b101fd31a17eba6611cc4aa93213d10fbe62b69d72836c8f4337",
+      "url": "https://github.com/boostorg/locale/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-math-9c2f1611": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-math-boost-1.85.0.tar.gz",
+      "sha256": "a6a82e2650b9bd9bf724430cb743f17e1ca12e08c98cfa2b9098128357b13848",
+      "url": "https://github.com/boostorg/math/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-move-9542916e": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-move-boost-1.85.0.tar.gz",
+      "sha256": "ef17d52b9d6ea249018348301a7e5dd3111cb90c61ee7625a98212c8b5345272",
+      "url": "https://github.com/boostorg/move/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-mp11-30aac34d": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-mp11-boost-1.85.0.tar.gz",
+      "sha256": "2b56b3adc20f34c86e7fb8e90373b81d13465d51abbe6a3bb3c03c5450355cee",
+      "url": "https://github.com/boostorg/mp11/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-mpl-4972e376": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-mpl-boost-1.85.0.tar.gz",
+      "sha256": "7186e98e59d4f1ae82aa485e047967d0355a1d912d1a6a40a36a7b68a7fbe68b",
+      "url": "https://github.com/boostorg/mpl/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-multiprecision-d1291fcf": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-multiprecision-boost-1.85.0.tar.gz",
+      "sha256": "701bd1ea1c62d59f57d2053535937411b00a147cdcd8d719794e6101dfa148a2",
+      "url": "https://github.com/boostorg/multiprecision/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-numeric-conversion-2ea3ecb1": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-numeric_conversion-boost-1.85.0.tar.gz",
+      "sha256": "db14a9666d26c704bc3bd35f5875b4901e6ee4ea6d56204006e60c8475d609e4",
+      "url": "https://github.com/boostorg/numeric_conversion/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-optional-d2d433dd": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-optional-boost-1.85.0.tar.gz",
+      "sha256": "6c54091d4b1ec1a888e31737cee842d27f63aaad84df7c0fc0fa2c38f9efeed1",
+      "url": "https://github.com/boostorg/optional/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-predef-0ac03e3f": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-predef-boost-1.85.0.tar.gz",
+      "sha256": "f8ee2799d6b0e32ab25aa315cbe188ab685cf8e9af1054880af124aca5b969d3",
+      "url": "https://github.com/boostorg/predef/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-preprocessor-2545d238": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-preprocessor-boost-1.85.0.tar.gz",
+      "sha256": "85ea385e8f8f5ff119730c5b512b3323410c13adc2a74527ac8495edcc67fd95",
+      "url": "https://github.com/boostorg/preprocessor/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-random-d832f8af": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-random-boost-1.85.0.tar.gz",
+      "sha256": "b21e0de8e14b441e87e5f67e571137097eb6a7acb744e1a7e73b57f1907531cb",
+      "url": "https://github.com/boostorg/random/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-range-b487fd10": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-range-boost-1.85.0.tar.gz",
+      "sha256": "85b28fa430552b7e6e3dc52dc74936b30531ea998322457a0abd5519b345ea2f",
+      "url": "https://github.com/boostorg/range/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-ratio-a8854181": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-ratio-boost-1.85.0.tar.gz",
+      "sha256": "6dace5a3aca3615d9744a4e562511e7d12f91cd6c49260478df2476e662e14f2",
+      "url": "https://github.com/boostorg/ratio/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-regex-65d8e587": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-regex-boost-1.85.0.tar.gz",
+      "sha256": "2784511a5bb760a64fbde148f799c8ad6e280514d72a5b3880753782aa6c68b8",
+      "url": "https://github.com/boostorg/regex/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-scope-exit-358f6412": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-scope_exit-boost-1.85.0.tar.gz",
+      "sha256": "45f80ca825f8804669e9e83dbc4971218db881329f6ed6a8b3b4224f454e72b8",
+      "url": "https://github.com/boostorg/scope_exit/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-smart-ptr-9acd10a0": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-smart_ptr-boost-1.85.0.tar.gz",
+      "sha256": "1d2d8986e80003ba774df6c18a5fcfe992f782b8bb4ce5bf705cb8a8697ef80e",
+      "url": "https://github.com/boostorg/smart_ptr/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-static-assert-5398ba7f": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-static_assert-boost-1.85.0.tar.gz",
+      "sha256": "061731bdaf0a93d8a954b86c601b9816ed00d495cbf18ca622a3a9f233b8b86b",
+      "url": "https://github.com/boostorg/static_assert/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-system-aff8f846": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-system-boost-1.85.0.tar.gz",
+      "sha256": "3df0c2cff056b13e6b523072264046daf778b86d5e329b8d38e7f637084207af",
+      "url": "https://github.com/boostorg/system/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-thread-85ec6c7b": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-thread-boost-1.85.0.tar.gz",
+      "sha256": "296ba4a879360d411f4747a7e2de7edde24560700edd73018ca68e91c064a52d",
+      "url": "https://github.com/boostorg/thread/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-throw-exception-e45202d6": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-throw_exception-boost-1.85.0.tar.gz",
+      "sha256": "ea24a8a246247c30e88458428b8bafc817511459a1d7d4fe8f08c942a7609c61",
+      "url": "https://github.com/boostorg/throw_exception/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-tokenizer-8a5bb18e": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-tokenizer-boost-1.85.0.tar.gz",
+      "sha256": "66a7fcf30f32e1a2149fe54421f5e31fe804bd70f352a57f262a0638a8debd73",
+      "url": "https://github.com/boostorg/tokenizer/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-tuple-9f07a457": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-tuple-boost-1.85.0.tar.gz",
+      "sha256": "03164a5c3197733b7dfb55e776683245c3c9eda0772085a1dabdcc54d184d7b2",
+      "url": "https://github.com/boostorg/tuple/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-type-traits-67c408b1": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-type_traits-boost-1.85.0.tar.gz",
+      "sha256": "1872a42fbaffe067be6912ef38ef5c2c52d318ce48038c20bf44dc5e5fff93e1",
+      "url": "https://github.com/boostorg/type_traits/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-typeof-807fb9d3": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-typeof-boost-1.85.0.tar.gz",
+      "sha256": "767eb671b41265fcefa49713a54cc3efaa99c8e872d88d6bb63b47bd47ec065f",
+      "url": "https://github.com/boostorg/typeof/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-unordered-52b1aa67": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-unordered-boost-1.85.0.tar.gz",
+      "sha256": "4c7e9b34292b0095d4c54436b0b0da64fe06ffbe7cf2cfab79de150d0f90efb3",
+      "url": "https://github.com/boostorg/unordered/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-utility-4ae6da0e": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-utility-boost-1.85.0.tar.gz",
+      "sha256": "3a7bd3300c3763a30125061e130dd4059ac46ff750ac2105b93d740132f97966",
+      "url": "https://github.com/boostorg/utility/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-boost-variant2-3c9a932c": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-variant2-boost-1.85.0.tar.gz",
+      "sha256": "d2e0f925109bcd529b8c644579b257a8d6f5575e7c5efb44b08e4e0bdec51f55",
+      "url": "https://github.com/boostorg/variant2/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#2"
+  },
+  "arrow-vcpkg-boost-winapi-a927fd4d": {
+    "license": "BSL-1.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "boostorg-winapi-boost-1.85.0.tar.gz",
+      "sha256": "c7adafc8396e5c0d7140dd8269904de1143f1c201746755f52b4e10b0d015381",
+      "url": "https://github.com/boostorg/winapi/archive/boost-1.85.0.tar.gz"
+    },
+    "version": "1.85.0#1"
+  },
+  "arrow-vcpkg-brotli-cfd33540": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "google-brotli-v1.1.0.tar.gz",
+      "sha256": "e720a6ca29428b803f4ad165371771f5398faba397edf6778837a18599ea13ff",
+      "url": "https://github.com/google/brotli/archive/v1.1.0.tar.gz"
+    },
+    "version": "1.1.0#1"
+  },
+  "arrow-vcpkg-c-ares-ecf4ae09": {
+    "license": "MIT-CMU",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "c-ares-c-ares-cares-1_28_1.tar.gz",
+      "sha256": "e520d971415e48e607819c2f4b377b0aa69044ef6619160bb41bdba15ab4d545",
+      "url": "https://github.com/c-ares/c-ares/archive/cares-1_28_1.tar.gz"
+    },
+    "version": "1.28.1"
+  },
+  "arrow-vcpkg-crc32c-a52f710c": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "google-crc32c-1.1.2.tar.gz",
+      "sha256": "ac07840513072b7fcebda6e821068aa04889018f24e10e46181068fb214d7e56",
+      "url": "https://github.com/google/crc32c/archive/1.1.2.tar.gz"
+    },
+    "version": "1.1.2#2"
+  },
+  "arrow-vcpkg-curl-d087d33c": {
+    "license": "curl AND ISC AND BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "curl-curl-curl-8_8_0.tar.gz",
+      "sha256": "eb2f17efd68013945ffde1cb0ca61bf46709db86f400c76e84463aef453ed74e",
+      "url": "https://github.com/curl/curl/archive/curl-8_8_0.tar.gz"
+    },
+    "version": "8.8.0#1"
+  },
+  "arrow-vcpkg-gflags-dcdbf754": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "gflags-gflags-v2.2.2.tar.gz",
+      "sha256": "34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf",
+      "url": "https://github.com/gflags/gflags/archive/v2.2.2.tar.gz"
+    },
+    "version": "2.2.2#9"
+  },
+  "arrow-vcpkg-glog-b47bfaf4": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "google-glog-v0.7.0.tar.gz",
+      "sha256": "375106b5976231b92e66879c1a92ce062923b9ae573c42b56ba28b112ee4cc11",
+      "url": "https://github.com/google/glog/archive/v0.7.0.tar.gz"
+    },
+    "version": "0.7.0#1"
+  },
+  "arrow-vcpkg-google-cloud-cpp-d6ec5cd6": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "googleapis-google-cloud-cpp-v2.25.0.tar.gz",
+      "sha256": "6f58213e2af16326392da84cd8a52af78cb80bc47338eb87e87d14c14c0e6bad",
+      "url": "https://github.com/googleapis/google-cloud-cpp/archive/v2.25.0.tar.gz"
+    },
+    "version": "2.25.0"
+  },
+  "arrow-vcpkg-grpc-b41c982d": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "grpc-grpc-v1.51.1.tar.gz",
+      "sha256": "b55696fb249669744de3e71acc54a9382bea0dce7cd5ba379b356b12b82d4229",
+      "url": "https://github.com/grpc/grpc/archive/v1.51.1.tar.gz"
+    },
+    "version": "1.51.1#3"
+  },
+  "arrow-vcpkg-libevent-1e9188e0": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "libevent-libevent-4d85d28acdbb83bb60e500e9345bab757b64d6d1.tar.gz",
+      "sha256": "f71e42fe01367c2051899cf1b05a109eb27aeb6933f280d540fdbf01190484d1",
+      "url": "https://github.com/libevent/libevent/archive/4d85d28acdbb83bb60e500e9345bab757b64d6d1.tar.gz"
+    },
+    "version": "2.1.12+20230128"
+  },
+  "arrow-vcpkg-liblzma-d2d5b273": {
+    "license": "Public domain (liblzma; other source-file licenses preserved)",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "tukaani-project-xz-v5.4.4.tar.gz",
+      "sha256": "4c1d840f9fa5bbffcd2cdc61b108c947341f14c9eaaefd6b2ea29d679170f4e7",
+      "url": "https://github.com/tukaani-project/xz/archive/v5.4.4.tar.gz"
+    },
+    "version": "5.4.4"
+  },
+  "arrow-vcpkg-libxml2-b9cb89d4": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "GNOME-libxml2-v2.11.7.tar.gz",
+      "sha256": "9f8a53f0becb074e90d765a264b3d4f60a7e53cb6e3672764afbf05ffbd2f247",
+      "url": "https://gitlab.gnome.org//GNOME/libxml2/-/archive/v2.11.7/libxml2-v2.11.7.tar.gz"
+    },
+    "version": "2.11.7"
+  },
+  "arrow-vcpkg-lz4-4e303352": {
+    "license": "BSD-2-Clause (library); GPL-2.0-only (standalone tools, not linked into runner)",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "lz4-lz4-v1.9.4.tar.gz",
+      "sha256": "0b0e3aa07c8c063ddf40b082bdf7e37a1562bda40a0ff5272957f3e987e0e54b",
+      "url": "https://github.com/lz4/lz4/archive/v1.9.4.tar.gz"
+    },
+    "version": "1.9.4#1"
+  },
+  "arrow-vcpkg-nlohmann-json-64269d1c": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "nlohmann-json-v3.11.3.tar.gz",
+      "sha256": "0d8ef5af7f9794e3263480193c491549b2ba6cc74bb018906202ada498a79406",
+      "url": "https://github.com/nlohmann/json/archive/v3.11.3.tar.gz"
+    },
+    "version": "3.11.3"
+  },
+  "arrow-vcpkg-openssl-1e82440a": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "openssl-openssl-openssl-3.3.1.tar.gz",
+      "sha256": "133bf39b8d1635ac94a8483042cc448251b770a0d12c7af0c05ea895ddd98f1d",
+      "url": "https://github.com/openssl/openssl/archive/openssl-3.3.1.tar.gz"
+    },
+    "version": "3.3.1"
+  },
+  "arrow-vcpkg-orc-5c63d99c": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "apache-orc-v2.0.0.tar.gz",
+      "sha256": "19bc533074867b3bbc3c8c1a1bf489ba738e8fd257fa65990159c68736dae4a8",
+      "url": "https://github.com/apache/orc/archive/v2.0.0.tar.gz"
+    },
+    "version": "2.0.0"
+  },
+  "arrow-vcpkg-protobuf-0444acff": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "protocolbuffers-protobuf-v3.21.12.tar.gz",
+      "sha256": "930c2c3b5ecc6c9c12615cf5ad93f1cd6e12d0aba862b572e076259970ac3a53",
+      "url": "https://github.com/protocolbuffers/protobuf/archive/v3.21.12.tar.gz"
+    },
+    "version": "3.21.12#3"
+  },
+  "arrow-vcpkg-rapidjson-42ee4797": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "Tencent-rapidjson-a95e013b97ca6523f32da23f5095fcc9dd6067e5-2.tar.gz",
+      "sha256": "558683755fc99c3dc7930f679b9f617af9d03dc600b7a79f6314ecf4cea18aac",
+      "url": "https://github.com/Tencent/rapidjson/archive/a95e013b97ca6523f32da23f5095fcc9dd6067e5.tar.gz"
+    },
+    "version": "2023-07-17#1"
+  },
+  "arrow-vcpkg-re2-0d9346df": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "google-re2-2024-04-01.tar.gz",
+      "sha256": "3f6690c3393a613c3a0b566309cf04dc381d61470079b653afc47c67fb898198",
+      "url": "https://github.com/google/re2/archive/2024-04-01.tar.gz"
+    },
+    "version": "2024-04-01#2"
+  },
+  "arrow-vcpkg-re2-6c1ebe45": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "9ebe4a22cad8a025b68a9594bdff3c047a111333.patch",
+      "sha256": "0f4fbddc033a77e3181e89c0c8a2830d70802e37d87126f0b00d85d7c8176db2",
+      "url": "https://github.com/google/re2/commit/9ebe4a22cad8a025b68a9594bdff3c047a111333.patch?full_index=1"
+    },
+    "version": "2024-04-01#2"
+  },
+  "arrow-vcpkg-s2n-5487ae09": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "aws-s2n-tls-v1.4.8.tar.gz",
+      "sha256": "ffb7f3dfaee7a05c041296e19ff0a079d01552ce2615ec14361a6458a0e22d18",
+      "url": "https://github.com/aws/s2n-tls/archive/v1.4.8.tar.gz"
+    },
+    "version": "1.4.8"
+  },
+  "arrow-vcpkg-snappy-83d13f60": {
+    "license": "BSD-3-Clause (library; test-data terms preserved in source notices)",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "google-snappy-1.1.10.tar.gz",
+      "sha256": "49d831bffcc5f3d01482340fe5af59852ca2fe76c3e05df0e67203ebbe0f1d90",
+      "url": "https://github.com/google/snappy/archive/1.1.10.tar.gz"
+    },
+    "version": "1.1.10#1"
+  },
+  "arrow-vcpkg-sqlite3-6e5e158d": {
+    "license": "blessing",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "sqlite-autoconf-3460000.zip",
+      "sha256": "6f8e6a7b335273748816f9b3b62bbdc372a889de8782d7f048c653a447417a7d",
+      "url": "https://sqlite.org/2024/sqlite-autoconf-3460000.tar.gz"
+    },
+    "version": "3.46.0#1"
+  },
+  "arrow-vcpkg-thrift-f97295d4": {
+    "license": "Apache-2.0",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "apache-thrift-v0.20.0.tar.gz",
+      "sha256": "cd7b829d3d9d87f9f7d708e004eef7629789591ee1d416f4741913bc33e5c27d",
+      "url": "https://github.com/apache/thrift/archive/v0.20.0.tar.gz"
+    },
+    "version": "0.20.0#1"
+  },
+  "arrow-vcpkg-upb-2fbab728": {
+    "license": "BSD-2-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "protocolbuffers-upb-e4635f223e7d36dfbea3b722a4ca4807a7e882e2.tar.gz",
+      "sha256": "017a7e8e4e842d01dba5dc8aa316323eee080cd1b75986a7d1f94d87220e6502",
+      "url": "https://github.com/protocolbuffers/upb/archive/e4635f223e7d36dfbea3b722a4ca4807a7e882e2.tar.gz"
+    },
+    "version": "2022-06-21#1"
+  },
+  "arrow-vcpkg-utf8proc-e9ee661c": {
+    "license": "MIT",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "JuliaLang-utf8proc-34db3f7954e9298e89f42641ac78e0450f80a70d.tar.gz",
+      "sha256": "e15065b22d44de65c08446a8c4edbf5b5fe00fdb346e91b48b7be14c6afacfe1",
+      "url": "https://github.com/JuliaLang/utf8proc/archive/34db3f7954e9298e89f42641ac78e0450f80a70d.tar.gz"
+    },
+    "version": "2.9.0"
+  },
+  "arrow-vcpkg-xsimd-c82cd1a3": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "xtensor-stack-xsimd-12.1.1.tar.gz",
+      "sha256": "73f94a051278ef3da4533b691d31244d12074d5d71107473a9fd8d7be15f0110",
+      "url": "https://github.com/xtensor-stack/xsimd/archive/12.1.1.tar.gz"
+    },
+    "version": "12.1.1"
+  },
+  "arrow-vcpkg-zlib-c4c79d61": {
+    "license": "Zlib",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "madler-zlib-v1.3.1.tar.gz",
+      "sha256": "17e88863f3600672ab49182f217281b6fc4d3c762bde361935e436a95214d05c",
+      "url": "https://github.com/madler/zlib/archive/v1.3.1.tar.gz"
+    },
+    "version": "1.3.1"
+  },
+  "arrow-vcpkg-zstd-bd666881": {
+    "license": "BSD-3-Clause (selected option; alternative GPL-2.0-only preserved)",
+    "review_basis": "Arrow 21.0.0 ci/vcpkg manifest and ports.patch with vcpkg f7423ee180c4b7f40d43402c2feb3859161ef625; source downloaded and SHA-512 checked by vcpkg. Includes transitive and build dependencies conservatively.",
+    "source": {
+      "filename": "facebook-zstd-v1.5.6.tar.gz",
+      "sha256": "30f35f71c1203369dc979ecde0400ffea93c27391bfd2ac5a9715d2173d92ff7",
+      "url": "https://github.com/facebook/zstd/archive/v1.5.6.tar.gz"
+    },
+    "version": "1.5.6"
+  },
+  "arrow-xsimd": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "xsimd-13.0.0.tar.gz",
+      "sha256": "8bdbbad0c3e7afa38d88d0d484d70a1671a1d8aefff03f4223ab2eb6a41110a3",
+      "url": "https://github.com/xtensor-stack/xsimd/archive/13.0.0.tar.gz"
+    },
+    "version": "13.0.0"
+  },
+  "arrow-zlib": {
+    "license": "Zlib",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "zlib-1.3.1.tar.gz",
+      "sha256": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+      "url": "https://zlib.net/fossils/zlib-1.3.1.tar.gz"
+    },
+    "version": "1.3.1"
+  },
+  "arrow-zstd": {
+    "license": "BSD-3-Clause",
+    "review_basis": "Apache Arrow 21.0.0 cpp/thirdparty/versions.txt and bundled LICENSE/NOTICE; includes optional/build dependencies conservatively.",
+    "source": {
+      "filename": "zstd-1.5.7.tar.gz",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz"
+    },
+    "version": "1.5.7"
+  },
+  "cpython": {
+    "license": "PSF-2.0",
+    "source": {
+      "filename": "Python-3.12.14.tar.xz",
+      "sha256": "5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a",
+      "url": "https://www.python.org/ftp/python/3.12.14/Python-3.12.14.tar.xz"
+    },
+    "version": "3.12.14"
+  },
+  "cpython-desktop": {
+    "license": "PSF-2.0",
+    "source": {
+      "filename": "Python-3.12.10.tar.xz",
+      "sha256": "07ab697474595e06f06647417d3c7fa97ded07afc1a7e4454c5639919b46eaea",
+      "url": "https://www.python.org/ftp/python/3.12.10/Python-3.12.10.tar.xz"
+    },
+    "version": "3.12.10"
+  },
+  "libffi-cpython": {
+    "license": "MIT",
+    "source": {
+      "filename": "cpython-libffi-3.4.4.tar.gz",
+      "sha256": "9d802681adfea27d84cae0487a785fb9caa925bdad44c401b364c59ab2b8edda",
+      "url": "https://codeload.github.com/python/cpython-source-deps/tar.gz/libffi-3.4.4"
+    },
+    "version": "3.4.4"
+  },
+  "libxml2-igraph": {
+    "license": "MIT",
+    "source": {
+      "filename": "libxml2-2.9.1.tar.xz",
+      "sha256": "0228dfae26647541533813f2d58d9138c3910f2ba57e9e683d81c8804b8fae7c",
+      "url": "https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.1.tar.xz"
+    },
+    "version": "2.9.1"
+  },
+  "linux-gcc": {
+    "license": "GPL-3.0-or-later WITH GCC-exception-3.1 AND LGPL-2.1-or-later",
+    "source": {
+      "filename": "gcc-4.8.5-44.el7.src.rpm",
+      "sha256": "642c4085f6af9565e39583e54a9d7a5d9e6b93dd8c8e9474aec8a892d6c7aa36",
+      "url": "https://vault.centos.org/7.9.2009/os/Source/SPackages/gcc-4.8.5-44.el7.src.rpm"
+    },
+    "version": "4.8.5-44.el7"
+  },
+  "macos-gcc": {
+    "license": "GPL-3.0-or-later WITH GCC-exception-3.1 AND LGPL-2.1-or-later",
+    "source": {
+      "filename": "gcc-darwin-11.3.0-2.tar.gz",
+      "sha256": "53b26b1c6bb35162a43e1260450407a39e833f770c8deb5a5a3b55da48687041",
+      "url": "https://codeload.github.com/isuruf/gcc/tar.gz/2d280e7eafc086e9df85f50ed1a6526d6a3a204d"
+    },
+    "version": "11.3.0-2"
+  },
+  "macos-gfortran-recipes": {
+    "license": "BSD-2-Clause",
+    "source": {
+      "filename": "gfortran-install-47bb0df1.tar.gz",
+      "sha256": "e773eaee532801a277d17a9316f7d7b46e77ea55881aece61bf99b4e3f88b305",
+      "url": "https://codeload.github.com/MacPython/gfortran-install/tar.gz/47bb0df1e6f766503f81e4fd3d5d2acadd887393"
+    },
+    "version": "47bb0df1e6f766503f81e4fd3d5d2acadd887393"
+  },
+  "openblas": {
+    "license": "BSD-3-Clause",
+    "source": {
+      "filename": "OpenBLAS-c2f4bdbb.tar.gz",
+      "sha256": "39733784bdbe90d2634d94e276a5180577ebc1c69447aaed8191d865edb616a7",
+      "url": "https://codeload.github.com/OpenMathLib/OpenBLAS/tar.gz/c2f4bdbb"
+    },
+    "version": "0.3.23-293-gc2f4bdbb"
+  },
+  "openblas-build-recipes": {
+    "license": "MIT",
+    "source": {
+      "filename": "openblas-libs-7556eb15.tar.gz",
+      "sha256": "077edc0925620cf37bb7a444d52d3ea0c4e317af24098660862438cb23050ef8",
+      "url": "https://codeload.github.com/MacPython/openblas-libs/tar.gz/7556eb158653b5f06bf43ad27b357f1623048502"
+    },
+    "version": "7556eb158653b5f06bf43ad27b357f1623048502"
+  },
+  "openssl-cpython": {
+    "license": "Apache-2.0",
+    "source": {
+      "filename": "openssl-3.0.16.tar.gz",
+      "sha256": "57e03c50feab5d31b152af2b764f10379aecd8ee92f16c985983ce4a99f7ef86",
+      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.0.16/openssl-3.0.16.tar.gz"
+    },
+    "version": "3.0.16"
+  },
+  "sqlite-cpython": {
+    "license": "LicenseRef-Public-Domain",
+    "source": {
+      "filename": "sqlite-src-3490100.zip",
+      "sha256": "4404d93cbce818b1b98ca7259d0ba9b45db76f2fdd9373e56f2d29b519f4d43b",
+      "url": "https://sqlite.org/2025/sqlite-src-3490100.zip"
+    },
+    "version": "3.49.1"
+  },
+  "windows-gcc": {
+    "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+    "source": {
+      "filename": "gcc-10.3.0.tar.xz",
+      "sha256": "64f404c1a650f27fc33da242e1f2df54952e3963a49e06e73f6940f3223ac344",
+      "url": "https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/gcc-10.3.0.tar.xz"
+    },
+    "version": "10.3.0"
+  },
+  "xz-cpython-macos": {
+    "license": "LicenseRef-Public-Domain AND BSD-3-Clause",
+    "source": {
+      "filename": "xz-5.2.3.tar.gz",
+      "sha256": "71928b357d0a09a12a4b4c5fafca8c31c19b0e7d3b8ebb19622e96f26dbf28cb",
+      "url": "https://tukaani.org/xz/xz-5.2.3.tar.gz"
+    },
+    "version": "5.2.3"
+  },
+  "xz-cpython-windows": {
+    "license": "LicenseRef-Public-Domain AND BSD-3-Clause",
+    "source": {
+      "filename": "cpython-xz-5.2.5.tar.gz",
+      "sha256": "a15c168e39e87d750c3dc766edc7f19bdda57dacf01e509678467eace91ad282",
+      "url": "https://codeload.github.com/python/cpython-source-deps/tar.gz/xz-5.2.5"
+    },
+    "version": "5.2.5"
+  },
+  "xz-igraph": {
+    "license": "0BSD AND LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "source": {
+      "filename": "xz-5.2.2.tar.xz",
+      "sha256": "f341b1906ebcdde291dd619399ae944600edc9193619dd0c0110a5f05bfcc89e",
+      "url": "https://tukaani.org/xz/xz-5.2.2.tar.xz"
+    },
+    "version": "5.2.2"
+  }
+}

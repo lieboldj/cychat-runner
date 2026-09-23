@@ -1,0 +1,38 @@
+# Exact runtime and build versions reviewed in licensing/python-packages.json.
+# Native wheel components have additional terms; see DISTRIBUTION.md.
+altgraph==0.17.5
+backoff==2.2.1
+certifi==2026.2.25
+chardet==5.2.0
+charset-normalizer==3.4.4
+colorbrewer==0.3
+colour==0.1.5
+decorator==5.3.1
+idna==3.11
+igraph==0.11.6
+ijson==3.5.1
+macholib==1.16.4 ; sys_platform == "darwin"
+ndex2==3.11.0
+networkx==3.2.1
+numpy==1.26.4
+packaging==26.3
+pandas==2.2.3
+pefile==2023.2.7 ; sys_platform == "win32"
+pip==24.2
+py4cytoscape==1.13.0
+pyarrow==21.0.0
+pyinstaller==6.15.0
+pyinstaller-hooks-contrib==2025.8
+python-dateutil==2.9.0.post0
+python-igraph==0.11.6
+pytz==2026.3.post1
+pywin32-ctypes==0.2.3 ; sys_platform == "win32"
+requests==2.32.5
+requests-toolbelt==1.0.0
+setuptools==84.0.0
+six==1.17.0
+texttable==1.7.0
+tzdata==2026.4
+urllib3==2.6.3
+wget==3.2
+wheel==0.45.1
