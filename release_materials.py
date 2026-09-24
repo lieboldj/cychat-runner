@@ -6,6 +6,7 @@ The reviewed catalogs are inputs, never inferred from a successful build.
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import fnmatch
+import gzip
 import hashlib
 import http.client
 from importlib import metadata
@@ -30,7 +31,7 @@ CACHE = ROOT / "out/source-cache"
 LEGAL = ROOT / "build/legal"
 ASSETS = (
     "script-runner-linux-x86_64", "script-runner-windows-x86_64.zip",
-    "script-runner-macos-aarch64", "script-runner-macos-x86_64",
+    "script-runner-macos-aarch64.tar.gz", "script-runner-macos-x86_64.tar.gz",
 )
 CPYTHON_SOURCE = "cpython" if sys.platform.startswith("linux") else "cpython-desktop"
 
@@ -347,6 +348,8 @@ def package(asset, binary):
     destination = output / asset
     if asset.endswith(".zip"):
         zip_folder(Path(binary), destination)
+    elif asset.endswith(".tar.gz"):
+        tar_folder(Path(binary), destination)
     else:
         shutil.copyfile(binary, destination)
     digest = sha256(destination)
@@ -379,6 +382,23 @@ def zip_folder(folder, destination):
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o100755 << 16
             archive.writestr(info, path.read_bytes())
+
+
+def tar_folder(folder, destination):
+    """Archive a one-folder build with its symlinks and modes, byte-identical for identical input."""
+    paths = [folder]
+    for root, dirs, files in os.walk(folder):
+        paths += [Path(root, name) for name in dirs + files]
+    paths.sort(key=lambda p: p.relative_to(folder.parent).as_posix())
+
+    def normalize(member):
+        member.mtime = 0
+        return anonymous_tar_member(member)
+
+    with open(destination, "wb") as raw, gzip.GzipFile(filename="", fileobj=raw, mode="wb", compresslevel=9, mtime=0) as gz, \
+            tarfile.open(fileobj=gz, mode="w", format=tarfile.PAX_FORMAT) as archive:
+        for path in paths:
+            archive.add(path, arcname=path.relative_to(folder.parent).as_posix(), recursive=False, filter=normalize)
 
 
 def source_bundle(version):

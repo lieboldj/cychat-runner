@@ -5,10 +5,10 @@ set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 case "$(uname -s)" in
     Linux)  ASSET="script-runner-linux-x86_64"; BIN="script-runner" ;;
-    Darwin) BIN="script-runner"
+    Darwin) BIN="script-runner/script-runner"
             case "$(uname -m)" in
-                arm64) ASSET="script-runner-macos-aarch64" ;;
-                *)     ASSET="script-runner-macos-x86_64" ;;
+                arm64) ASSET="script-runner-macos-aarch64.tar.gz" ;;
+                *)     ASSET="script-runner-macos-x86_64.tar.gz" ;;
             esac ;;
     MINGW*|MSYS*|CYGWIN*) ASSET="script-runner-windows-x86_64.zip"; BIN="script-runner/script-runner.exe" ;;
     *) echo "Unsupported build platform: $(uname -s)"; exit 1 ;;
@@ -34,7 +34,7 @@ echo "=== PyInstaller"
 
 echo "=== Smoke test"
 "$VENV_PY" smoke_test.py "dist/$BIN"
-# dist/script-runner is the executable, or on Windows the folder that holds it.
+# dist/script-runner is the executable, or on Windows and macOS the folder that holds it.
 "$VENV_PY" release_materials.py package --asset "$ASSET" --binary "dist/script-runner"
 
 echo "Release files: $HERE/out/release"

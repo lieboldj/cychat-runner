@@ -115,9 +115,10 @@ a = Analysis(
     optimize=0,
 )
 
-WINDOWS = sys.platform == "win32"
+# Windows and macOS ship one folder; Linux keeps the one-file executable.
+ONE_FOLDER = sys.platform in ("win32", "darwin")
 
-if WINDOWS:
+if ONE_FOLDER:
     # Files the runtime never opens: package tests, C headers, type stubs, Cython sources.
     # One-folder builds ship each of them as a file of its own.
     def _needed(entry):
@@ -129,9 +130,9 @@ record_analysis(a.binaries, a.pure)
 
 pyz = PYZ(a.pure)
 
-if WINDOWS:
-    # One folder, not one file: a one-file exe unpacks its whole runtime into %TEMP% on
-    # every start (about 18 s, virus scan included) and leaves it behind when killed.
+if ONE_FOLDER:
+    # One folder, not one file: a one-file runner unpacks its whole runtime into the temp
+    # folder on every start (18 s on Windows, 9-17 s on macOS) and leaves it behind when killed.
     exe = EXE(
         pyz,
         a.scripts,

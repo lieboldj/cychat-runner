@@ -66,14 +66,15 @@ jobs:
             python: "3.12.10"
             asset: script-runner-windows-x86_64.zip
             binary: script-runner/script-runner.exe
+          # macOS ships one folder too, as a .tar.gz that keeps its symlinks and modes.
           - os: macos-14
             python: "3.12.10"
-            asset: script-runner-macos-aarch64
-            binary: script-runner
+            asset: script-runner-macos-aarch64.tar.gz
+            binary: script-runner/script-runner
           - os: macos-15-intel
             python: "3.12.10"
-            asset: script-runner-macos-x86_64
-            binary: script-runner
+            asset: script-runner-macos-x86_64.tar.gz
+            binary: script-runner/script-runner
     defaults:
       run:
         shell: bash
@@ -127,7 +128,7 @@ jobs:
         run: python smoke_test.py "dist/${{ matrix.binary }}"
 
       - name: Package binary, notices, and build inventory
-        # dist/script-runner is the executable, or on Windows the folder that holds it.
+        # dist/script-runner is the executable, or on Windows and macOS the folder that holds it.
         run: python release_materials.py package --asset "${{ matrix.asset }}" --binary "dist/script-runner"
 
       - uses: actions/upload-artifact@v4
