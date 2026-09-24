@@ -10,7 +10,7 @@ case "$(uname -s)" in
                 arm64) ASSET="script-runner-macos-aarch64" ;;
                 *)     ASSET="script-runner-macos-x86_64" ;;
             esac ;;
-    MINGW*|MSYS*|CYGWIN*) ASSET="script-runner-windows-x86_64.exe"; BIN="script-runner.exe" ;;
+    MINGW*|MSYS*|CYGWIN*) ASSET="script-runner-windows-x86_64.zip"; BIN="script-runner/script-runner.exe" ;;
     *) echo "Unsupported build platform: $(uname -s)"; exit 1 ;;
 esac
 
@@ -34,6 +34,7 @@ echo "=== PyInstaller"
 
 echo "=== Smoke test"
 "$VENV_PY" smoke_test.py "dist/$BIN"
-"$VENV_PY" release_materials.py package --asset "$ASSET" --binary "dist/$BIN"
+# dist/script-runner is the executable, or on Windows the folder that holds it.
+"$VENV_PY" release_materials.py package --asset "$ASSET" --binary "dist/script-runner"
 
 echo "Release files: $HERE/out/release"

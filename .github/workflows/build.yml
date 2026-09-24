@@ -61,10 +61,11 @@ jobs:
             python: "3.12.14"
             asset: script-runner-linux-x86_64
             binary: script-runner
+          # Windows ships one folder (zipped), not a self-unpacking exe.
           - os: windows-2022
             python: "3.12.10"
-            asset: script-runner-windows-x86_64.exe
-            binary: script-runner.exe
+            asset: script-runner-windows-x86_64.zip
+            binary: script-runner/script-runner.exe
           - os: macos-14
             python: "3.12.10"
             asset: script-runner-macos-aarch64
@@ -126,7 +127,8 @@ jobs:
         run: python smoke_test.py "dist/${{ matrix.binary }}"
 
       - name: Package binary, notices, and build inventory
-        run: python release_materials.py package --asset "${{ matrix.asset }}" --binary "dist/${{ matrix.binary }}"
+        # dist/script-runner is the executable, or on Windows the folder that holds it.
+        run: python release_materials.py package --asset "${{ matrix.asset }}" --binary "dist/script-runner"
 
       - uses: actions/upload-artifact@v4
         with:

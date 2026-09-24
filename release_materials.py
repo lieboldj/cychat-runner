@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "out/source-cache"
 LEGAL = ROOT / "build/legal"
 ASSETS = (
-    "script-runner-linux-x86_64", "script-runner-windows-x86_64.exe",
+    "script-runner-linux-x86_64", "script-runner-windows-x86_64.zip",
     "script-runner-macos-aarch64", "script-runner-macos-x86_64",
 )
 CPYTHON_SOURCE = "cpython" if sys.platform.startswith("linux") else "cpython-desktop"
@@ -345,7 +345,10 @@ def package(asset, binary):
     output = ROOT / "out/release"
     output.mkdir(parents=True, exist_ok=True)
     destination = output / asset
-    shutil.copyfile(binary, destination)
+    if asset.endswith(".zip"):
+        zip_folder(Path(binary), destination)
+    else:
+        shutil.copyfile(binary, destination)
     digest = sha256(destination)
     destination.with_name(asset + ".sha256").write_text(f"{digest}  {asset}\n", encoding="utf-8", newline="\n")
     environment = read_json(LEGAL / "environment.json")
@@ -365,6 +368,17 @@ def package(asset, binary):
                 archive.write(path, path.relative_to(LEGAL).as_posix())
         archive.write(output / (asset + ".build-info.json"), "build-info.json")
     print(asset, destination.stat().st_size, digest)
+
+
+def zip_folder(folder, destination):
+    """Zip a one-folder build under its folder name, byte-identical for identical input."""
+    files = sorted((p for p in folder.rglob("*") if p.is_file()), key=lambda p: p.relative_to(folder).as_posix())
+    with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        for path in files:
+            info = zipfile.ZipInfo(f"{folder.name}/{path.relative_to(folder).as_posix()}", (1980, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o100755 << 16
+            archive.writestr(info, path.read_bytes())
 
 
 def source_bundle(version):

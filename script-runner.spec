@@ -115,27 +115,59 @@ a = Analysis(
     optimize=0,
 )
 
+WINDOWS = sys.platform == "win32"
+
+if WINDOWS:
+    # Files the runtime never opens: package tests, C headers, type stubs, Cython sources.
+    # One-folder builds ship each of them as a file of its own.
+    def _needed(entry):
+        dest = "/" + entry[0].replace("\\", "/").lower()
+        return "/tests/" not in dest and not dest.endswith((".h", ".hpp", ".pyi", ".pxd", ".pyx"))
+    a.datas = [entry for entry in a.datas if _needed(entry)]
+
 record_analysis(a.binaries, a.pure)
 
 pyz = PYZ(a.pure)
 
-exe = EXE(
-    pyz,
-    a.scripts,
-    a.binaries,
-    a.datas,
-    [],
-    name="script-runner",
-    debug=False,
-    bootloader_ignore_signals=False,
-    strip=sys.platform.startswith("linux"),  # stripping breaks macOS code signatures
-    upx=False,  # UPX-packed binaries trip antivirus scanners and slow each start
-    upx_exclude=[],
-    runtime_tmpdir=None,
-    console=True,
-    disable_windowed_traceback=False,
-    argv_emulation=False,
-    target_arch=None,
-    codesign_identity=None,
-    entitlements_file=None,
-)
+if WINDOWS:
+    # One folder, not one file: a one-file exe unpacks its whole runtime into %TEMP% on
+    # every start (about 18 s, virus scan included) and leaves it behind when killed.
+    exe = EXE(
+        pyz,
+        a.scripts,
+        [],
+        exclude_binaries=True,
+        name="script-runner",
+        debug=False,
+        bootloader_ignore_signals=False,
+        strip=False,
+        upx=False,
+        console=True,
+        disable_windowed_traceback=False,
+        argv_emulation=False,
+        target_arch=None,
+        codesign_identity=None,
+        entitlements_file=None,
+    )
+    coll = COLLECT(exe, a.binaries, a.datas, strip=False, upx=False, name="script-runner")
+else:
+    exe = EXE(
+        pyz,
+        a.scripts,
+        a.binaries,
+        a.datas,
+        [],
+        name="script-runner",
+        debug=False,
+        bootloader_ignore_signals=False,
+        strip=sys.platform.startswith("linux"),  # stripping breaks macOS code signatures
+        upx=False,  # UPX-packed binaries trip antivirus scanners and slow each start
+        upx_exclude=[],
+        runtime_tmpdir=None,
+        console=True,
+        disable_windowed_traceback=False,
+        argv_emulation=False,
+        target_arch=None,
+        codesign_identity=None,
+        entitlements_file=None,
+    )

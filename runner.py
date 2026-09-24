@@ -15,7 +15,7 @@ import time
 import traceback
 
 
-RUNNER_VERSION = "2.0.0"
+RUNNER_VERSION = "2.1.0"
 
 
 def _app_tmp_dir() -> pathlib.Path:
